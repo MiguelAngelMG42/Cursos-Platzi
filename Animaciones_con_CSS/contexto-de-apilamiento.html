@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
+        body {
             margin: 0;
             height: 100vh;
             width: 100%;
             display: grid;
             place-items: center;
         }
-        .phone{
+
+        .phone {
             position: relative;
             border: 8px solid black;
             border-radius: 40px;
@@ -22,7 +24,8 @@
             background: #CCEFFF;
             box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
         }
-        .layer-1{
+
+        .layer-1 {
             position: absolute;
             z-index: 1;
             height: 450px;
@@ -31,17 +34,18 @@
             right: 60px;
             border-radius: 30px;
         }
-        .layer-2{
+
+        .layer-2 {
             position: absolute;
             z-index: 2;
             height: 450px;
             width: 80px;
-            background: lightgray;
             bottom: 0;
             left: 60px;
             border-radius: 30px;
         }
-        .layer-3{
+
+        .layer-3 {
             position: absolute;
             z-index: 3;
             left: 0;
@@ -53,36 +57,38 @@
             bottom: 0;
             border-radius: 30px;
         }
-        .layer-4{
+
+        .layer-4 {
             position: absolute;
             z-index: 4;
             height: 350px;
             width: 80px;
-            background: lightgray;
             bottom: 0;
             left: 30px;
             border-radius: 30px;
         }
-        .layer-5{
+
+        .layer-5 {
             position: absolute;
             z-index: 5;
             width: 200px;
             height: 300px;
-            background:burlywood;
+            background: burlywood;
             bottom: 0;
             border-radius: 30px;
         }
-        .layer-6{
+
+        .layer-6 {
             position: absolute;
             z-index: 6;
             width: 80px;
             height: 245px;
-            background: lightgray;
             bottom: 0;
             right: 60px;
             border-radius: 30px;
         }
-        .layer-7{
+
+        .layer-7 {
             position: absolute;
             z-index: 7;
             width: 200px;
@@ -92,7 +98,8 @@
             right: 0;
             border-radius: 30px;
         }
-        .layer-8{
+
+        .layer-8 {
             position: absolute;
             z-index: 8;
             height: 130px;
@@ -102,7 +109,8 @@
             border-radius: 30px;
             left: 75px;
         }
-        .layer-9{
+
+        .layer-9 {
             position: absolute;
             z-index: 9;
             height: 100px;
@@ -111,7 +119,8 @@
             border-radius: 30px;
             background: white;
         }
-        .layer-10{
+
+        .layer-10 {
             position: absolute;
             z-index: 10;
             height: 100px;
@@ -122,7 +131,7 @@
             background: white;
         }
 
-        .left-ear--outer{
+        .left-ear--outer {
             background: white;
             border-radius: 90%;
             width: 20px;
@@ -131,7 +140,7 @@
             left: 10px;
         }
 
-        .left-ear--inner{
+        .left-ear--inner {
             background: pink;
             border-radius: 90%;
             width: 10px;
@@ -141,7 +150,7 @@
             top: 8px;
         }
 
-        .right-ear--outer{
+        .right-ear--outer {
             background: white;
             border-radius: 90%;
             width: 20px;
@@ -150,7 +159,7 @@
             right: 10px;
         }
 
-        .right-ear--inner{
+        .right-ear--inner {
             background: pink;
             border-radius: 90%;
             width: 10px;
@@ -160,7 +169,7 @@
             top: 8px;
         }
 
-        .head{
+        .head {
             background: white;
             border-radius: 50%;
             height: 80px;
@@ -172,7 +181,7 @@
             position: absolute;
         }
 
-        .head__eye{
+        .head__eye {
             background: black;
             border-radius: 50%;
             width: 4px;
@@ -181,38 +190,265 @@
             top: 15px;
         }
 
-        .head__eye--left{
+        .head__eye--left {
             left: 30px;
         }
 
-        .head__eye--right{
-           right: 30px;
+        .head__eye--right {
+            right: 30px;
+        }
+
+        .pusheenHead {
+            width: 80px;
+            height: 100px;
+            top: 10px;
+            position: absolute;
+            background-color: lightgray;
+            -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            border-radius: 50% 50% 50% 50% / 60% 60% 85% 85%;
+        }
+
+        .left-ear--pusheen {
+            background: lightgray;
+            border-radius: 90%;
+            width: 26px;
+            height: 50px;
+            position: absolute;
+            left: 8px;
+        }
+
+        .right-ear--pusheen {
+            background: lightgray;
+            border-radius: 90%;
+            width: 26px;
+            height: 50px;
+            position: absolute;
+            right: 8px;
+        }
+
+        .huevo {
+            width: 50px;
+            height: 100px;
+            background-color: lightgray;
+            -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            border-radius: 50% 50% 50% 50% / 80% 80% 10% 10%;
+            position: absolute;
+        }
+
+        .huevo2 {
+            width: 50px;
+            height: 100px;
+            background-color: lightgray;
+            -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            border-radius: 50% 50% 50% 50% / 80% 80% 10% 10%;
+            position: absolute;
+            right: 0;
+        }
+
+        .oval {
+            width: 50px;
+            height: 35px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            background: lightgray;
+            position: absolute;
+            top: 10px;
+            left: 15px;
+        }
+
+        .face__eye {
+            background: black;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            top: 15px;
+        }
+
+        .face__eye--left {
+            left: 35px;
+        }
+
+        .face__eye--right {
+            right: 35px;
+        }
+
+        .mouth {
+            background: black;
+            border-radius: 40%;
+            width: 8px;
+            height: 4px;
+            position: absolute;
+            top: 19px;
+            left: 20px;
+        }
+
+        .nose {
+            background: black;
+            border-radius: 40%;
+            width: 4px;
+            height: 8px;
+            position: absolute;
+            top: 15px;
+            left: 22px;
+        }
+
+        .mustache__left--1 {
+            width: 18px;
+            height: 2px;
+            border: solid 3px #000;
+            border-color: #000 transparent transparent transparent;
+            border-radius: 75%/10px 10px 0 0;
+            position: absolute;
+            top: 13px;
+            left: -20px;
+        }
+        .mustache__left--2 {
+            width: 18px;
+            height: 2px;
+            border: solid 3px #000;
+            border-color: #000 transparent transparent transparent;
+            border-radius: 75%/10px 10px 0 0;
+            position: absolute;
+            top: 18px;
+            left: -20px;
+        }
+        .mustache__right--1 {
+            width: 18px;
+            height: 2px;
+            border: solid 3px #000;
+            border-color: #000 transparent transparent transparent;
+            border-radius: 75%/10px 10px 0 0;
+            position: absolute;
+            top: 13px;
+            right: -20px;
+        }
+        .mustache__right--2 {
+            width: 18px;
+            height: 2px;
+            border: solid 3px #000;
+            border-color: #000 transparent transparent transparent;
+            border-radius: 75%/10px 10px 0 0;
+            position: absolute;
+            top: 18px;
+            right: -20px;
+        }
+
+        .spot__1{
+            background: grey;
+            border-radius: 40%;
+            width: 3px;
+            height: 8px;
+            position: absolute;
+            top: 0;
+            left: 23px;
+        }
+        .spot__2{
+            background: grey;
+            border-radius: 40%;
+            width: 3px;
+            height: 8px;
+            position: absolute;
+            top: 0;
+            left: 19px;
+        }
+        .spot__3{
+            background: grey;
+            border-radius: 40%;
+            width: 3px;
+            height: 8px;
+            position: absolute;
+            top: 0;
+            left: 27px;
         }
     </style>
 </head>
+
 <body>
     <div class="phone">
         <!-- bunny 1 -->
         <div class="layer-1">
-            <div class="left-ear--outer"></div>
-            <div class="left-ear--inner"></div>
-            <div class="right-ear--outer"></div>
-            <div class="right-ear--inner"></div>
-            <div class="head">
-                <div class="head__eye head__eye--left"></div>
-                <div class="head__eye head__eye--right"></div>
+            <div class="huevo"></div>
+            <div class="huevo2"></div>
+            <div class="oval">
+                <div class="face__eye face__eye--left"></div>
+                <div class="face__eye face__eye--right"></div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+                <div class="mustache__left--1"></div>
+                <div class="mustache__left--2"></div>
+                <div class="mustache__right--1"></div>
+                <div class="mustache__right--2"></div>
+                <div class="spot__1"></div>
+                <div class="spot__2"></div>
+                <div class="spot__3"></div>
+            </div>
+        </div>
+        <!-- bunny 2 -->
+        <div class="layer-2">
+            <div class="huevo"></div>
+            <div class="huevo2"></div>
+            <div class="oval">
+                <div class="face__eye face__eye--left"></div>
+                <div class="face__eye face__eye--right"></div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+                <div class="mustache__left--1"></div>
+                <div class="mustache__left--2"></div>
+                <div class="mustache__right--1"></div>
+                <div class="mustache__right--2"></div>
+                <div class="spot__1"></div>
+                <div class="spot__2"></div>
+                <div class="spot__3"></div>
+            </div>
+        </div>
+        <div class="layer-3"></div> <!-- wall 1 -->
+        <!-- bunny 3 -->
+        <div class="layer-4">
+            <div class="huevo"></div>
+            <div class="huevo2"></div>
+            <div class="oval">
+                <div class="face__eye face__eye--left"></div>
+                <div class="face__eye face__eye--right"></div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+                <div class="mustache__left--1"></div>
+                <div class="mustache__left--2"></div>
+                <div class="mustache__right--1"></div>
+                <div class="mustache__right--2"></div>
+                <div class="spot__1"></div>
+                <div class="spot__2"></div>
+                <div class="spot__3"></div>
+            </div>
+        </div>
+        <div class="layer-5"></div> <!-- wall 2 -->
+        <!-- bunny 4 -->
+        <div class="layer-6">
+            <div class="huevo"></div>
+            <div class="huevo2"></div>
+            <div class="oval">
+                <div class="face__eye face__eye--left"></div>
+                <div class="face__eye face__eye--right"></div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+                <div class="mustache__left--1"></div>
+                <div class="mustache__left--2"></div>
+                <div class="mustache__right--1"></div>
+                <div class="mustache__right--2"></div>
+                <div class="spot__1"></div>
+                <div class="spot__2"></div>
+                <div class="spot__3"></div>
             </div>
         </div> 
-
-        <div class="layer-2"></div> <!-- bunny 2 -->
-        <div class="layer-3"></div> <!-- wall 1 -->
-        <div class="layer-4"></div> <!-- bunny 3 -->
-        <div class="layer-5"></div> <!-- wall 2 -->
-        <div class="layer-6"></div> <!-- bunny 4 -->
         <div class="layer-7"></div> <!-- wall 3 -->
         <div class="layer-8"></div> <!-- lawn 1 -->
         <div class="layer-9"></div> <!-- lawn 2 -->
         <div class="layer-10"></div> <!-- lawn 3 -->
     </div>
 </body>
+
 </html>
